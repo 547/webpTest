@@ -15,34 +15,20 @@ class ImageViewController: UIViewController {
     @IBOutlet weak var otherImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         SDImageCodersManager.shared.addCoder(SDImageWebPCoder.shared)
-        if let path = Bundle.main.path(forResource: "webp_1", ofType: "webp") {
-            let url = URL.init(fileURLWithPath: path)
-            imageView.sd_setImage(with: url, completed: nil)
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss:SSS"
-            print("start \(dateFormatter.string(from: Date()))")
-            imageView.sd_setImage(with: url) { (image, _, _, _) in
-                print("end \(dateFormatter.string(from: Date()))")
-            }
-        }
         
-        
-        otherImageView.image = UIImage.init(imageLiteralResourceName: "New Project (1)")
-        
-        
+//        print("start webp \(Date().timeIntervalSince1970)")
+//        imageView.sd_setImage(with: URL.init(string: "https://raw.githubusercontent.com/547/webpTest/master/webpTest/webps/webp_1.webp")) { (image, _, _, _) in
+//            print("end webp \(Date().timeIntervalSince1970) \n \(image)")
+//        }
+//        
+//        
+//        print("start png \(Date().timeIntervalSince1970)")
+//        otherImageView.sd_setImage(with: URL.init(string: "https://raw.githubusercontent.com/547/webpTest/master/webpTest/pngs/png_1.png")) { (image, _, _, _) in
+//            print("end png \(Date().timeIntervalSince1970) \n \(image)")
+//        }
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

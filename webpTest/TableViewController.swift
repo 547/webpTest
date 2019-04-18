@@ -35,10 +35,14 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell.init(style: .default, reuseIdentifier: "cell")
-        if let path = Bundle.main.path(forResource: "webp_1", ofType: "webp") {
-            let url = URL.init(fileURLWithPath: path)
-            cell.imageView?.sd_setImage(with: url, completed: nil)
-        }
+//        if let path = Bundle.main.path(forResource: "webp_1", ofType: "webp") {
+//            let url = URL.init(fileURLWithPath: path)
+//            cell.imageView?.sd_setImage(with: url, completed: nil)
+//        }
+//        print("start \(Date().timeIntervalSince1970)")
+        cell.imageView?.sd_setImage(with: URL.init(string: "https://raw.githubusercontent.com/547/webpTest/master/webpTest/webps/webp_1.webp"), completed: { (image, _, _, _) in
+//            print("end \(Date().timeIntervalSince1970) \n \(image)")
+        })
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
