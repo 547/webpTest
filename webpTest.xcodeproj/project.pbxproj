@@ -16,6 +16,7 @@
 		145F460C2268136F00B4F900 /* webpTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145F460B2268136F00B4F900 /* webpTestUITests.swift */; };
 		145F461A2268183800B4F900 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145F46192268183800B4F900 /* WebViewController.swift */; };
 		145F461C226819BE00B4F900 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145F461B226819BE00B4F900 /* ImageViewController.swift */; };
+		149A3E4522696AC100BE551C /* jpg_1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 149A3E4422696AC100BE551C /* jpg_1.jpeg */; };
 		14F269C722685FEC00AA8E78 /* webp_1.webp in Resources */ = {isa = PBXBuildFile; fileRef = 14F269C622685FEC00AA8E78 /* webp_1.webp */; };
 		14F269C922686E3A00AA8E78 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F269C822686E3A00AA8E78 /* TableViewController.swift */; };
 		14F269CC226880B600AA8E78 /* png_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F269CB226880B600AA8E78 /* png_1.png */; };
@@ -55,6 +56,7 @@
 		145F460D2268136F00B4F900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		145F46192268183800B4F900 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		145F461B226819BE00B4F900 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		149A3E4422696AC100BE551C /* jpg_1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jpg_1.jpeg; sourceTree = "<group>"; };
 		14F269C622685FEC00AA8E78 /* webp_1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = webp_1.webp; sourceTree = "<group>"; };
 		14F269C822686E3A00AA8E78 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		14F269CB226880B600AA8E78 /* png_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = png_1.png; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		145F45EA2268136C00B4F900 /* webpTest */ = {
 			isa = PBXGroup;
 			children = (
+				149A3E4322696AC100BE551C /* jpgs */,
 				14F269CA226880B600AA8E78 /* pngs */,
 				14F269C522685FEC00AA8E78 /* webps */,
 				145F45EB2268136C00B4F900 /* AppDelegate.swift */,
@@ -145,6 +148,14 @@
 				145F460D2268136F00B4F900 /* Info.plist */,
 			);
 			path = webpTestUITests;
+			sourceTree = "<group>";
+		};
+		149A3E4322696AC100BE551C /* jpgs */ = {
+			isa = PBXGroup;
+			children = (
+				149A3E4422696AC100BE551C /* jpg_1.jpeg */,
+			);
+			path = jpgs;
 			sourceTree = "<group>";
 		};
 		14F269C522685FEC00AA8E78 /* webps */ = {
@@ -291,6 +302,7 @@
 				14F269C722685FEC00AA8E78 /* webp_1.webp in Resources */,
 				145F45F32268136F00B4F900 /* Assets.xcassets in Resources */,
 				145F45F12268136C00B4F900 /* Main.storyboard in Resources */,
+				149A3E4522696AC100BE551C /* jpg_1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

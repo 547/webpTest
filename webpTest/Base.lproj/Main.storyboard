@@ -105,13 +105,22 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2YL-m5-NhO">
                                 <rect key="frame" x="67.5" y="332" width="240" height="128"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vah-Dx-ehX">
+                                <rect key="frame" x="67.5" y="480" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Vah-Dx-ehX" secondAttribute="height" multiplier="15:8" id="bZn-d0-tCw"/>
+                                    <constraint firstAttribute="width" constant="240" id="itI-vO-WvX"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Vah-Dx-ehX" firstAttribute="centerX" secondItem="ido-7r-i2S" secondAttribute="centerX" id="1O0-eJ-Fhe"/>
                             <constraint firstItem="2YL-m5-NhO" firstAttribute="width" secondItem="YhM-Kf-tob" secondAttribute="width" id="1TA-Bv-xcU"/>
                             <constraint firstItem="2YL-m5-NhO" firstAttribute="centerX" secondItem="ido-7r-i2S" secondAttribute="centerX" id="1qB-GL-vMC"/>
                             <constraint firstItem="YhM-Kf-tob" firstAttribute="top" secondItem="ido-7r-i2S" secondAttribute="top" constant="120" id="TRn-lp-YgB"/>
                             <constraint firstItem="2YL-m5-NhO" firstAttribute="height" secondItem="YhM-Kf-tob" secondAttribute="height" id="mpW-OT-1L4"/>
+                            <constraint firstItem="Vah-Dx-ehX" firstAttribute="top" secondItem="2YL-m5-NhO" secondAttribute="bottom" constant="20" id="rPt-Er-pfJ"/>
                             <constraint firstItem="2YL-m5-NhO" firstAttribute="top" secondItem="YhM-Kf-tob" secondAttribute="bottom" constant="20" id="urq-wE-B55"/>
                             <constraint firstItem="YhM-Kf-tob" firstAttribute="centerX" secondItem="ido-7r-i2S" secondAttribute="centerX" id="xkw-MP-CDI"/>
                         </constraints>
@@ -126,7 +135,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="YhM-Kf-tob" id="5BH-yP-Yit"/>
-                        <outlet property="otherImageView" destination="2YL-m5-NhO" id="hdR-CV-MvA"/>
+                        <outlet property="jpgImageView" destination="Vah-Dx-ehX" id="GLq-Kd-9bg"/>
+                        <outlet property="pngImageView" destination="2YL-m5-NhO" id="JMG-Yi-3Hm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MZf-90-71F" userLabel="First Responder" sceneMemberID="firstResponder"/>
